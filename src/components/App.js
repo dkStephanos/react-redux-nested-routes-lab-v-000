@@ -11,6 +11,7 @@ const App = (props) =>
       </div>
       <Route exact path="/" render={() => <h3>Welcome to the Pets List App</h3>} />
       <Route path="/pets" component={PetsPage} />
+      <Route path=`${match.url}/:petId` component={PetsShow} />
     </div>
   </Router>;
 
